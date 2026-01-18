@@ -11,7 +11,7 @@ class Roadrunner < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/johntheyoung/roadrunner/releases/download/v0.8.0/roadrunner_0.8.0_darwin_amd64.tar.gz"
-      sha256 "9108c6ef45c7fc34458994fda029133a8c1766a8358da5e2f6050d9efa391719"
+      sha256 "6fa7e8598717eeb57dff4857fb9462e8b852d06257b7b92f33fc9916243e0d61"
 
       def install
         bin.install "rr"
@@ -19,7 +19,7 @@ class Roadrunner < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/johntheyoung/roadrunner/releases/download/v0.8.0/roadrunner_0.8.0_darwin_arm64.tar.gz"
-      sha256 "178ed1ec7ecab5370fe9f1dcc1b5794453391151f34cdc50d57203839d935fd0"
+      sha256 "6aaa3c586932e532347aa7e2175a7fb136201476d77c6580caf5cd671bfc19fb"
 
       def install
         bin.install "rr"
@@ -30,14 +30,14 @@ class Roadrunner < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/johntheyoung/roadrunner/releases/download/v0.8.0/roadrunner_0.8.0_linux_amd64.tar.gz"
-      sha256 "b8f93d5ae2706c49de4946d8d7d7f518a75c0d0cee3e115a7c82ac674a4bc4fd"
+      sha256 "f52a6740fd7497ec48f2b950b068bab4fd98f25f40e9139c2f279aa4515b7b4f"
       def install
         bin.install "rr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/johntheyoung/roadrunner/releases/download/v0.8.0/roadrunner_0.8.0_linux_arm64.tar.gz"
-      sha256 "ad2a46247b0ab68195438d4adc2e8a8514ca96e8b8b98ca5c66866ed7992ce55"
+      sha256 "a766d65aa39535a0222a0c123a295de91cc48bd7fe06aa79bbf4e602829928ff"
       def install
         bin.install "rr"
       end
