@@ -5,21 +5,21 @@
 class Roadrunner < Formula
   desc "Beeper Desktop CLI for chats, messages, search, reminders."
   homepage "https://github.com/johntheyoung/roadrunner"
-  version "0.15.0"
+  version "0.16.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/johntheyoung/roadrunner/releases/download/v0.15.0/roadrunner_0.15.0_darwin_amd64.tar.gz"
-      sha256 "c58c0dc8018cd6e8dd9a029e4d0a49c0fc20500e4521ffc712df49b596eb2641"
+      url "https://github.com/johntheyoung/roadrunner/releases/download/v0.16.0/roadrunner_0.16.0_darwin_amd64.tar.gz"
+      sha256 "37c70b7d85e30b04b0ed02907bdb365ded4fd8ea32e4e8aca188f3765505c23b"
 
       def install
         bin.install "rr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/johntheyoung/roadrunner/releases/download/v0.15.0/roadrunner_0.15.0_darwin_arm64.tar.gz"
-      sha256 "482d9725db3803499b7139497743f321a51b28f7fc3dd228eb9053d0a055dbab"
+      url "https://github.com/johntheyoung/roadrunner/releases/download/v0.16.0/roadrunner_0.16.0_darwin_arm64.tar.gz"
+      sha256 "f2aab6fb77e3c8f78acc291f31b9d55084b4f7d3291129108e93160562b2524b"
 
       def install
         bin.install "rr"
@@ -29,15 +29,15 @@ class Roadrunner < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/johntheyoung/roadrunner/releases/download/v0.15.0/roadrunner_0.15.0_linux_amd64.tar.gz"
-      sha256 "4f2f5374e4d735c5f09dc159e3bafcb988c32bc5b5d5a8593228bbf3129377e4"
+      url "https://github.com/johntheyoung/roadrunner/releases/download/v0.16.0/roadrunner_0.16.0_linux_amd64.tar.gz"
+      sha256 "1cfd61836ead21ee5ecfd83863a2b38c2cd7cbb5dc47d0d2967d32c13d4df73e"
       def install
         bin.install "rr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/johntheyoung/roadrunner/releases/download/v0.15.0/roadrunner_0.15.0_linux_arm64.tar.gz"
-      sha256 "6873cc03f49dc91db7bdbf3c8a743b9beea0bae9a240c99f96ae325dd141fb92"
+      url "https://github.com/johntheyoung/roadrunner/releases/download/v0.16.0/roadrunner_0.16.0_linux_arm64.tar.gz"
+      sha256 "186ab3e0d01641b8bbf4d3e9f0925c674929fe1e6597b6f2e7ace6a24f1ee366"
       def install
         bin.install "rr"
       end
